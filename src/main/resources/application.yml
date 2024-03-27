@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dayoff?useSSL=false&serverTimezone=Asia/Seoul
+    username: tony
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: create
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 6
+
+jwt:
+  secret:
+    key: 7ZWt7ZW0OTntmZTsnbTtjIXtlZzqta3snYTrhIjrqLjshLjqs4TroZzrgpjslYTqsIDsnpDtm4zrpa3tlZzqsJzrsJzsnpDrpbzrp4zrk6TslrTqsIDsnpA=
+
+openapi:
+  url: https://api.odcloud.kr/api/nts-businessman/v1
+  encoding_apiKey: NxcABamlz1LxPmbQB0iKT7sbUwcgjvkChlZPNAWmybGKvHH0R%2BqqgttOECHW3sGYgpeRXTFPwnG0PFB7HoL4wg%3D%3D
+  decoding_apiKey: NxcABamlz1LxPmbQB0iKT7sbUwcgjvkChlZPNAWmybGKvHH0R+qqgttOECHW3sGYgpeRXTFPwnG0PFB7HoL4wg==
