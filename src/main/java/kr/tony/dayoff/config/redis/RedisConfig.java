@@ -24,18 +24,17 @@ public class RedisConfig {
     }
 
     @Bean
-    public RedisTemplate<String, String> redisTemplate() {
-
-        RedisTemplate<String, String> objectObjectRedisTemplate = new RedisTemplate<>();
-        redisTemplate().setKeySerializer(new StringRedisSerializer());
-        redisTemplate().setValueSerializer(new StringRedisSerializer());
-        redisTemplate().setConnectionFactory(redisConnectionFactory());
-
-        return redisTemplate();
+    public RedisTemplate<String,String> redisTemplate() {
+        RedisTemplate<String, String> redisTemplate = new RedisTemplate<>();
+        redisTemplate.setKeySerializer(new StringRedisSerializer());
+        redisTemplate.setValueSerializer(new StringRedisSerializer());
+        redisTemplate.setConnectionFactory(redisConnectionFactory());
+        //redisConnectionFactory() 메서드를 사용하여 RedisConnectionFactory를 가져와서 RedisTemplate에 설정합니다.
+        return redisTemplate;
     }
 
     @Bean
-    public GenericJackson2JsonRedisSerializer genericJackson2JsonRedisSerializer() {
+    public GenericJackson2JsonRedisSerializer genericJackson2JsonRedisSerializer(){
         return new GenericJackson2JsonRedisSerializer();
     }
 }

@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 @Getter
-@RequiredArgsConstructor
 @NoArgsConstructor
 public class UserDetailsImpl implements UserDetails {
 

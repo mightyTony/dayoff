@@ -5,7 +5,7 @@ import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;
 import jakarta.servlet.http.HttpServletRequest;
 import kr.tony.dayoff.config.redis.RedisDao;
-import kr.tony.dayoff.config.security.dto.TokenResponse;
+import kr.tony.dayoff.config.security.dto.response.TokenResponse;
 import kr.tony.dayoff.exception.CustomException;
 import kr.tony.dayoff.exception.ExceptionStatus;
 import kr.tony.dayoff.user.domain.UserRoleEnum;

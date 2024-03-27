@@ -1,4 +1,4 @@
-package kr.tony.dayoff.config.security.dto;
+package kr.tony.dayoff.config.security.dto.response;
 
 import lombok.AccessLevel;
 import lombok.Getter;
